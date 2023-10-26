@@ -6,19 +6,38 @@
   <style>
       * { box-sizing: border-box; }
       body {
-        font-family:Verdana, Arial, sans-serif;
+        font-family: Verdana, Arial, sans-serif;
         background-color: #00005D;
       }
       #wrapper { 
         background-color: #b3c7e6; 
         width: 80%;
         margin: auto;
-        min-width:850px;
+        min-width: 850px;
       } 
       nav { 
         width: 150px;
         padding: 20px;
       } 
+      nav ul {
+        list-style: none; 
+        padding: 0;
+      }
+      nav li {
+        margin: 0; 
+      }
+      nav a {
+        text-decoration: none; 
+        display: block; 
+        color: #00005D; 
+        background-color: #b3c7e6;
+        padding: 10px 20px; 
+        transition: background-color 0.3s, color 0.3s; 
+      }
+      nav a:hover {
+        background-color: #0a9e65; 
+        color: #b1b9b2; 
+      }
       main { 
         background-color: #FFFFFF;
         padding: 20px;
@@ -35,16 +54,16 @@
       }
       h2 { 
         color: #869dc7; 
-        font-family: arial, sans-serif;
+        font-family: Arial, sans-serif;
       }
       main img { 
         margin: 10px;
       }
       footer {
-        font-size:70%;
+        font-size: 70%;
         text-align: center;
         clear: right;
-        padding-bottom:20px;
+        padding-bottom: 20px;
         background-color: #FFFFFF;
       }	
   </style> 
@@ -55,10 +74,12 @@
       <h1>Lighthouse Island Bistro</h1>
     </header>
     <nav>
-      <a href="index.html">Home</a><br>
-      <a href="rooms.html">Menu</a><br>
-      <a href="directions.html">Directions</a><br>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Menu</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
     <main> 
       <img src="./images/lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
