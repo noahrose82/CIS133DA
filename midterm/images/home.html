@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog's Life</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dog's Life</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="services.html"><img src="groom.png" style="width: 25%" alt="Services" />  </a></li>
+            <li><a href="Map.html"><img src="map.png" style="width:20%" alt="Map to Shop" /></a></li>
+            <li><a href="contact.html"><img src="contact.png" style="width:25%" alt="Contact" /></a></li>
+        </ul>
+    </nav>
+
+    <style>
+        h1 {
+            margin-top: 5px;
+        }
+
+        .center-container {
+            text-align: center; 
+            margin: 0 auto; 
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 5px;
+            border: 10px solid #000000;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 500px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<h2> Before</h2>
+<div class="center-container">
+    <div class="image-container">
+        <img src="ugly.jpg" style="width:auto" alt="uglydog">
+    </div>
+<h2>After</h2>    
+    <div class="image-container">
+        <img src="pretty.jpg" style="width:auto" alt="prettydog">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Dog's Life</p>
+</footer>
+</body>
+</html>

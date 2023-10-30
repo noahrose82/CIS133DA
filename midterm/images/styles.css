@@ -1,0 +1,104 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('paw-prints.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3c0b8c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #e00b0b; 
+}
+
+p {
+    color: #e0c40e;
+    line-height: 1.5;
+}
+
+.contact-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-box form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-box label {
+    font-weight: bold;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-box button {
+    grid-column: 1 / span 2;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #8005b0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
