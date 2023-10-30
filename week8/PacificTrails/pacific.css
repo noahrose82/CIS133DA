@@ -38,19 +38,23 @@ nav a:hover {
     color: #A52A2A; 
 }
 
-nav li { 
-    border-bottom: 1px solid #344873;
-    padding: .5em 1em;
-    width: 100%; 
+nav li {
+    border-bottom: none; 
+    width: 12em;
 }
 
-nav ul { 
+nav ul {
     display: flex;
-    flex-direction: column;
-    list-style-type: none; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
+* {
+    padding: 2em; 
+}
+
 
 main { display: block; 
     padding: 0 1em;
@@ -69,9 +73,9 @@ dt {
     font-weight: bold;
 }
 
-h1 {  
-    font-size: 1.5em;
-    text-align: center;
+h1 {
+    font-size: 2em; 
+    letter-spacing: 0.25em; 
 }
 
 h2 { 
@@ -88,13 +92,23 @@ h3 {
     font-size: 1.2em;
 }
 
-#homehero { 
-    height: 300px;
-    background-image: url(images/coast.jpg);
-    background-repeat: no-repeat;
-    background-size: 200% 100%; 
+#homehero {
+    height: 100%; 
+    width: 100%;
 }
 
-#wrapper { 
-    background-color: #FFFFFF;
+
+@media (min-width: 1024px) {
+    body {
+        background: linear-gradient(to bottom, white 20%, lightblue 60%, white 100%);
+    }
+
+    nav ul {
+        padding: 0 10%; 
+    }
+
+    #wrapper {
+        margin: 0 auto; 
+        width: 80%; /
+    }
 }
