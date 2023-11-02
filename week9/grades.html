@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+ <style>
+       thead, tfoot{
+         background-color: rgb(29, 55, 3);
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+        th, tr {
+          padding: 10px;
+     }
+       .nbr{
+          text-align: right;
+     }
+       tbody > tr:nth-child(even){ 
+            background-color: lightgreen;
+     }
+     table{
+        border-spacing: 0px;
+     }
+ </style>
+</head>
+<body>
+    <table> 
+        <thead>
+            <tr>
+                <th colspan="3">My CIS133 Grades</th> 
+
+            </tr>  
+            <tr>
+                <th>week #</th>
+                <th>Pts Possible</th>
+                <th>Pts Actual</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <tr>
+                <td>week1</td>
+                <td>70</td>
+                <td>65</td>
+            </tr>  
+            <tr>
+                <td>week2</td>
+                <td>80</td>
+                <td>68</td>
+            </tr> 
+            <tr>
+                <td>week3</td>
+                <td>40</td>
+                <td>34</td>
+            </tr> 
+            <tr>
+                <td>week4</td>
+                <td>40</td>
+                <td>36</td>
+            </tr> 
+            <tr>
+                <td>week5</td>
+                <td>40</td>
+                <td>31</td>
+            </tr> 
+            <tr>
+                <td>week6</td>
+                <td>40</td>
+                <td>29</td>
+            </tr> 
+            <tr>
+                <td>week7</td>
+                <td>40</td>
+                <td>37</td>
+            </tr> 
+            <tr>
+                <td>week8</td>
+                <td>100</td>
+                <td>91</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>week1</td>
+                <td>70</td>
+                <td>65</td>
+            </tr>  
+            <tr>
+                <th colspan="3">Letter Grades: B(86%) </th>
+                
+            </tr>  
+        </tfoot>
+    </table>
+
+</body>
+</html>
