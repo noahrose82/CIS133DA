@@ -17,25 +17,25 @@ header {
     text-align: center;
     padding: 20px;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+nav {
+       padding: 10px 0; 
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 50;
 }
 
-nav li a {
-    color: #fff;
-    display: block;
-    text-align: center;
-    margin-top: 5px;
+li {
+    display: inline; 
+    margin-right: 140px; 
 }
 
+a {
+    text-decoration: none; 
+    color: #fff; 
+}
 main {
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
@@ -46,6 +46,14 @@ h1, h2 {
     color: #e00b0b; 
 }
 
+table, th, td {
+    color: red;
+}
+
+
+body {
+    color: red;
+}
 p {
     color: #e0c40e;
     line-height: 1.5;
