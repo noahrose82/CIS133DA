@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+ 
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="Type">Style of Shirt:</label><br>
+                
+                 <select name="Type">
+                    <option value="Type2">Long Sleeve</option>
+                    <option value="Type1">Tshirt</option>
+                    <option value="Type3">Hoodie</option>
+                </select><br>
+            </td>
+            <td>
+                <img src="long.jpg" alt="Long Sleeve" width="300"  height="300">
+                <img src="Tshirt.jpg" alt="Tshirt" width="300"  height="300">
+               <img src="hoodie.jpg" alt="Hoodie" width="300"  height="300">
+            </td>
+            
+            <td>
+                <label for="color">Color:</label><br>
+                <select id="color" name="color">
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="white">White</option>
+                </select><br>
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" width="4px"><br>
+                <label for="size">Size:</label><br>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XLarge">XLarge</option>
+                </select><br>
+                <label for="logo">Include Company Logo:</label><br>
+                <input type="checkbox" id="logo" name="logo"><br>
+                <label for="fileUpload">Upload File:</label><br>
+                <input type="file" id="fileUpload" name="fileUpload"><br>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <head>
+        <style>
+            form {
+                width: 600px;
+                margin: 0 auto;
+            }
+            table {
+                width: 100%;
+            }
+            td {
+                padding: 5px;
+            }
+            .right-align {
+                text-align: right;
+            }
+            .submit-btn {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" id="fName" name="firstName" maxlength="25" placeholder="First Name" style="width: 100%;"></td>
+                    <td><input id="lName" type="text" name="lastname" placeholder="Last Name" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" id="streetAddress" name="streetAddress" maxlength="80" placeholder="Street Address" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="city" name="city" maxlength="50" placeholder="City" style="width: 100%;"></td>
+                    <td><input type="text" id="state" name="state" maxlength="3" placeholder="State" style="width: 100%;"></td>
+                    <td><input type="text" id="zip" name="zip" maxlength="10" placeholder="ZIP" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="email" id="email" name="email" maxlength="100" placeholder="Email Address" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" pattern="\d{10}" placeholder="Phone Number" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><strong>Best Delivery Date:</strong></td>
+                    <td colspan="2"><input type="date" id="deliveryDate" name="deliveryDate" placeholder="Best Delivery Date" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea id="textBox" name="textBox" maxlength="255" placeholder="Special Instructions" style="width: 100%;"></textarea></td>
+                </tr>
+                <tr class="submit-btn">
+                    <td class="right-align" colspan="3"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    
+
+    
