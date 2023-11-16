@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog's Life</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        ul {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        table {
+            margin: 0 auto; 
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dog's Life</h1>
+    </header>
+
+    <table class="image-table">
+        <tr>
+            <th> <img src= images/home.png  alt="Home" /></th>
+            <th><a href="services.html"> <img src="images/groom.png"  alt="Services" />  </a></th>
+            <th><a href="Map.html"><img src="images/map.png"  alt="Map to Shop" /></th>
+            <th><a href="contact.html"> <img src="images/contact.png"  alt="Contact" /></a></th>
+            <th><a href="right1.html"><img src="images/right.png"  alt="Map to Shop" /></a></th>
+        </tr>
+    </table>
+
+    <style>
+        h1 {
+            margin-top: 5px;
+        }
+
+        .center-container {
+            text-align: center; 
+            margin: 0 auto; 
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 5px;
+            border: 10px solid #000000;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 500px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<h2> Before</h2>
+<div class="center-container">
+    <div class="image-container">
+        <img src="images/ugly.jpg" style="width:auto" alt="uglydog">
+    </div>
+<h2>After</h2>    
+    <div class="image-container">
+        <img src="images/pretty.jpg" style="width:auto" alt="prettydog">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Dog's Life</p>
+</footer>
+</body>
+</html>
