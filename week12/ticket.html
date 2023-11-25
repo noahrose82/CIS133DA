@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="amigos.css">
     <title>Your Ticket to Animal Amigos</title>
+    <script>
+        function cancelTicket() {
+            window.close();
+        }
+
+        function printTicket() {
+            const amigoName = prompt("Provide Amigo's name:");
+            const visitDate = prompt("Provide the visit date (MM/DD/YYYY):");
+            document.title = `${amigoName}'s Ticket to Animal Amigos`;
+            document.getElementById('ownerName').textContent = amigoName;
+            document.getElementById('visitDate').textContent = visitDate;       
+        }
+    </script>
 </head>
 
-<body>
+<body> 
 
     <div id="aa_logo">
         <img src="./images/animal_amigos_shelter.PNG" style="width:300px;" alt="Animals in Sombreros" />
