@@ -7,7 +7,7 @@
     <title>Change The Title</title>
     <style>
         body {
-            background-color: lightgreen;
+            background-color: rgb(182, 238, 144);
         }
 
         div {
@@ -38,10 +38,25 @@
     <div id="celebrity">Mark Rober</div>
     <table>
         <tr>
-            <td><button>Change Title</button></td>
-            <td><button>Change Name</button></td>
-            <td><button>Change Color</button></td>
+            <td><button onclick="ChangeTitle()"> Change Title</button></td>
+            <td><button onclick="ChangeName()"> Change Name</button></td>
+            <td><button onclick="ChangeColor()"> Change Color</button></td>
         </tr>
     </table>
 </body>
+<script>
+    function ChangeTitle() {
+        let strTitle= window.prompt("What do you want the title of this page to be?");
+        document.title = strTitle;
+    }
+    function ChangeName() {
+        let strName= window.prompt("Who is your favorite celebrity?");
+        document.getElementById("celebrity").innerText = strName
+    }
+    function ChangeColor() {
+       let strColor = window.prompt("What color do you want the background to be?");
+       document.body.style.background = strColor
+    }
+</script>
+
 </html>
