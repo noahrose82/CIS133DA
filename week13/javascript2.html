@@ -65,6 +65,28 @@
 </body>
 
 <script lang="javascript">
+    function printTicket() {
+        var amigoName = document.getElementById('amigo_name').value;
+        var amigoType = document.getElementById('amigo_type').value;
+        var amigoSizeElements = document.getElementsByName('amigo_size');
+        var amigoSize;
+
+        for (var i = 0; i < amigoSizeElements.length; i++) {
+            if (amigoSizeElements[i].checked) {
+                amigoSize = amigoSizeElements[i].value;
+                break;
+            }
+        }
+
+        document.getElementById('amigoName').innerText = amigoName;
+
+        var amigoPicture = document.getElementById('amigoPicture');
+        amigoPicture.src = `./images/${amigoType}-${amigoSize}.jpg`;
+
+        amigoPicture.style.height = '150px';
+        document.getElementById('form').style.display = 'none';
+        alert('The ticket can now be printed.');
+    }
 
     var name = window.prompt('Enter your first name');
     var date = window.prompt('Enter the date you want to visit');
@@ -75,7 +97,6 @@
     function cancelTicket() {
         window.close();
     }
-
 </script>
 
 </html>
