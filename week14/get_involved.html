@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veterans' Voices - Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" >
+  <link rel="icon" type="images/x-icon" href="/images/sam.ico">
+</head>
+<header>
+  <h1>Welcome to Veterans' Voices!</h1>
+  <h2>Explore inspiring stories and support our veterans.</h2>
+  <nav>
+    <ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="veterans_stories.html">Veterans' Stories</a></li>
+      <li><a href="support_services.html">Support</a></li>
+      <li><a href="get_involved.html">Involved</a></li>
+      <li><a href="contact_us.html">Contact</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="container">
+      <h1>Write Your Story</h1>
+      <textarea id="storyInput" placeholder="Write your story here..."></textarea>
+      <input type="file" id="imageInput" accept="image/*">
+      <div class="buttons">
+        <button onclick="submitStory()">Submit</button>
+        <button onclick="clearInputs()">Clear</button>
+      </div>
+    </div>
+    <div class="donations">
+      <h2>Support Veterans</h2>
+      <p>Your donation helps veterans in need. Thank you for your support!</p>
+      <button onclick="openDonationLink()">Donate</button>
+    </div>
+  </div>
+</header>
+<footer>
+  <p>&copy; 2023 Veterans' Voices. All rights reserved.</p>
+</footer>
+</body>
+</html>
